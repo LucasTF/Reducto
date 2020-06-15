@@ -9,9 +9,16 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
+		"@types/imagemin": "^7.0.0",
+		"@types/imagemin-mozjpeg": "^8.0.0",
 		"electron": "^9.0.2",
 		"nodemon": "^2.0.4",
 		"typescript": "^3.9.3"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"imagemin": "^7.0.1",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.0",
+		"slash": "^3.0.0"
+	}
 }

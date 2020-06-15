@@ -7,7 +7,7 @@ import { isDev } from '../../utils/environment';
 function create() {
 	const mainWindow = new BrowserWindow({
 		title: 'Reducto',
-		width: 400,
+		width: isDev ? 900 : 400,
 		height: 500,
 		icon: path.join(
 			__dirname,
@@ -16,6 +16,9 @@ function create() {
 			'../assets/icons/Icon_256x256.png'
 		),
 		resizable: isDev,
+		webPreferences: {
+			nodeIntegration: true,
+		},
 	});
 
 	const menu = createMenu();
@@ -24,6 +27,10 @@ function create() {
 	mainWindow.loadURL(
 		`file://${path.join(__dirname, '..', '..', '../index.html')}`
 	);
+
+	if (isDev) {
+		mainWindow.webContents.openDevTools();
+	}
 
 	return mainWindow;
 }
