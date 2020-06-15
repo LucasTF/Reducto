@@ -1,0 +1,17 @@
+{
+	"name": "reducto",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"dev": "nodemon --exec electron ./build/main.js",
+		"start": "electron ./build/main.js"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^9.0.2",
+		"nodemon": "^2.0.4",
+		"typescript": "^3.9.3"
+	},
+	"dependencies": {}
+}
