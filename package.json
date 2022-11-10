@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@types/imagemin": "^7.0.0",
 		"@types/imagemin-mozjpeg": "^8.0.0",
-		"electron": "^9.0.2",
+		"electron": "^18.3.7",
 		"electron-packager": "^14.2.1",
 		"nodemon": "^2.0.4",
 		"typescript": "^3.9.3"
